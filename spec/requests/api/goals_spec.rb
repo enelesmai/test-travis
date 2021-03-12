@@ -8,8 +8,8 @@ describe 'Goals API' do
       tags 'goals'
       produces 'application/json'
 
-      response 200, 'Return default goals values' do
-        it 'Return 4 levels' do
+      response 200, 'Returns default goals values' do
+        it 'has 4 levels' do
           body = JSON(response.body.data)
           expect(body.count).to eq(4)
         end
