@@ -1,9 +1,5 @@
 language: ruby
 
-dist: bionic
-services:
-  - xvfb
-
 rvm:
   - 2.6.6
 
