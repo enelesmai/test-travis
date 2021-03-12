@@ -6,6 +6,7 @@ ruby '2.6.6'
 gem 'rails', '~> 6.1.3'
 gem 'puma', '~> 5.0'
 gem 'rack-cors', require: 'rack/cors'
+gem 'rails_param'
 
 # Swagger
 gem 'rswag-api'

@@ -12,6 +12,14 @@ paths:
       responses:
         '200':
           description: Returns default goals values
+  "/api/v1/payouts":
+    post:
+      summary: Calculate payout
+      tags:
+      - 'Exception Case: Empty Request'
+      responses:
+        '200':
+          description: Returns default goals values
 servers:
 - url: http://{defaultHost}
   variables:

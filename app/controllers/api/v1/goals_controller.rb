@@ -1,35 +1,16 @@
 # frozen_string_literal: true
 
-DEFAULT_GOALS = [
-  {
-    nivel: 'A',
-    expected: 5
-  },
-  {
-    nivel: 'B',
-    expected: 10
-  },
-  {
-    nivel: 'C',
-    expected: 15
-  },
-  {
-    nivel: 'Cuauh',
-    expected: 20
-  }
-].freeze
-
 module Api
   module V1
     # Shows default values for goals
     class GoalsController < ApplicationController
+      include Defaults
+      include Response
+
       def index
-        render(
-          json: {
-            data: DEFAULT_GOALS
-          },
-          status: :ok
-        )
+        json_response({
+          data: DEFAULT_CONFIG
+        })
       end
     end
   end

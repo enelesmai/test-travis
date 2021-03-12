@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   namespace 'api' do
     namespace 'v1' do
       resources :goals
+      post '/payouts', to: 'payouts#calculate'
+      post '/payouts/:jugadores/:configuracion', to: 'payouts#calculate'
     end
   end
 end
