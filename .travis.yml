@@ -3,5 +3,6 @@ rvm:
  - 2.6.6
 install:
   - gem install rails
+  - bundle install
 script:
   - rails rswag
