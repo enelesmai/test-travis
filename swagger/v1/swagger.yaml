@@ -11,7 +11,7 @@ paths:
       - goals
       responses:
         '200':
-          description: Return default goals values
+          description: Returns default goals values
 servers:
 - url: http://{defaultHost}
   variables:
