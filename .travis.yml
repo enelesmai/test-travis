@@ -1,5 +1,7 @@
 language: ruby
 rvm:
  - 2.6.6
- script: 
- - make test
+install:
+  - gem install rails
+script:
+  - rails rswag
