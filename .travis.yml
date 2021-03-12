@@ -70,5 +70,3 @@ jobs:
         on:
           branch: master
           tags: true
-
-[skip travis] Update README
